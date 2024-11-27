@@ -46,19 +46,19 @@ Git clone github file
 
 
 Change RESOURCE_GROUP in create-event-grid.infra.sh file
-![Alt text](images\change-rg-name.png)
+![Alt text](images/change-rg-name.png)
 
 Adjust parameter names in bicepparam files to desired values
-![Alt text](images\change-biccepparam-values.png)
+![Alt text](images/change-biccepparam-values.png)
 
 Change permissions for cloud shell to allow script to be run
-![Alt text](images\elevate-permissions-for-script.png)
+![Alt text](images/elevate-permissions-for-script.png)
 
 From root, run ./event-grid-ingestion/.bash/create-event-grid-infra.sh
-![Alt text](images\run-create-infra.png)
+![Alt text](images/run-create-infra.png)
 
 Deployment in Progress
-![Alt text](images\deployment-in-progress.png)
+![Alt text](images/deployment-in-progress.png)
 
 Post Deployment Results
-![Alt text](images\post-deployment-results.png)
+![Alt text](images/post-deployment-results.png)
