@@ -42,7 +42,7 @@ Navigate to Portal.azure.com and launch cloud portal
 
 Ensure you are in bash
 Git clone github file
-![Alt text](images\git-clone-repo.png)
+![Alt text](images/git-clone-repo.png)
 
 
 Change RESOURCE_GROUP in create-event-grid.infra.sh file
