@@ -69,18 +69,17 @@ Post Deployment Results
 Create a new ADX table, this can be done either via the UI or using the script in this repo (as an example)
 
 In your ADX Database, create a new data connection for the Event Grid created earlier
-[Alt text](images/create-event-grid-connection.png)
-[Alt text](images/create-event-grid-connection-details.png)
+![Alt text](images/create-event-grid-connection.png)
+![Alt text](images/create-event-grid-connection-details.png)
 
 Missed from the earlier screenshot, be sure to add the correct mapping file as well
-[Alt text](images/add-missing-mapping-file-image.png)
+![Alt text](images/add-missing-mapping-file-image.png)
 
 Upload the second file and the Event Grid should load the data for the ADX DB
-[Alt text](images/upload-second-file.png)
+![Alt text](images/upload-second-file.png)
 
 Wait five minutes and you should see traffic against the event hub
-[Alt text](images/traffic-check.png)
+![Alt text](images/traffic-check.png)
 
 Check the table you created and you should see more data in the table now
-[Alt text](images/additional-data-in-table.png)
-
+![Alt text](images/additional-data-in-table.png)
