@@ -2,9 +2,9 @@
 
 # Array of Bicep files and their corresponding parameter files
 declare -A deployments=(
-    ["bicep/storage-account.bicep"]="bicep/storage-account.params.bicepparam"
-    ["bicep/event-hub.bicep"]="bicep/event-hub.params.bicepparam"
-    ["bicep/event-grid.bicep"]="bicep/event-grid.params.bicepparam"
+    ["event-grid-ingestion/bicep/storage-account.bicep"]="event-grid-ingestion/bicep/storage-account.params.bicepparam"
+    ["event-grid-ingestion/bicep/event-hub.bicep"]="event-grid-ingestion/bicep/event-hub.params.bicepparam"
+    ["event-grid-ingestion/bicep/event-grid.bicep"]="event-grid-ingestion/bicep/event-grid.params.bicepparam"
 )
 
 RESOURCE_GROUP="adx-rg"
