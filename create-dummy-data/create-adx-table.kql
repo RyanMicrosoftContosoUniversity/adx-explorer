@@ -1,0 +1,11 @@
+// Create table command
+////////////////////////////////////////////////////////////
+.create table ['customers']  (['firstName']:string, ['lastName']:string, ['age']:int, ['email']:string)
+
+// Create mapping command
+////////////////////////////////////////////////////////////
+.create table ['customers'] ingestion json mapping 'customers_mapping' '[{"column":"firstName", "Properties":{"Path":"$[\'firstName\']"}},{"column":"lastName", "Properties":{"Path":"$[\'lastName\']"}},{"column":"age", "Properties":{"Path":"$[\'age\']"}},{"column":"email", "Properties":{"Path":"$[\'email\']"}}]'
+
+// Ingest data into table command
+///////////////////////////////////////////////////////////
+.ingest async into table ['customers'] ('h'[SAS URL]'') with (format='multijson',ignoreSizeLimit=true,ingestionMappingReference='customers_mapping',ingestionMappingType='json',tags="['0d76ed6d-fc96-4c24-8aef-722b77b4c3fc']")
